@@ -1,5 +1,6 @@
 import 'package:api_practice/example_two.dart';
 import 'package:api_practice/home_screen.dart';
+import 'package:api_practice/ui_test.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
+      color: Colors.white,
       debugShowCheckedModeBanner: false,
-      home: ExampleTwo(),
+      home: UiTest(),
     );
   }
 }

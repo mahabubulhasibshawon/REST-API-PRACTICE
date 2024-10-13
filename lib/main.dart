@@ -3,6 +3,8 @@ import 'package:api_practice/home_screen.dart';
 import 'package:api_practice/ui_test.dart';
 import 'package:flutter/material.dart';
 
+import 'example_four.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       color: Colors.white,
       debugShowCheckedModeBanner: false,
-      home: UiTest(),
+      home: ExampleFour(),
     );
   }
 }

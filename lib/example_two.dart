@@ -32,7 +32,7 @@ class _ExampleTwoState extends State<ExampleTwo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Two'),
+        title: const Text('Two'),
       ),
       body: Column(
         children: [
@@ -48,7 +48,7 @@ class _ExampleTwoState extends State<ExampleTwo> {
                             backgroundImage:  NetworkImage(snapshot.data![index].url.toString()),
                           ),
                           subtitle: Text(snapshot.data![index].title.toString()),
-                          title: Text('Notes id:'+snapshot.data![index].id.toString()),
+                          title: Text('Notes id:${snapshot.data![index].id}'),
                         );
                       });
                 }),

@@ -38,7 +38,7 @@ class _ExampleFourState extends State<ExampleFour> {
               builder: (context , snapshot){
 
                 if(snapshot.connectionState == ConnectionState.waiting){
-                  return Text('Loading');
+                  return const Center(child: CircularProgressIndicator());
                 }else {
                   return ListView.builder(
                       itemCount: data.length,
